@@ -1,0 +1,108 @@
+.emailRow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border-bottom: 1px solid whitesmoke;
+  transition: all ease-in-out 0.3s;
+}
+.emailRow:hover {
+  box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0,
+    0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+.emailRow__option,
+.emailRow__title,
+.emailRow__massage,
+.emailRow__time {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  box-sizing: border-box;
+}
+.emailRow__option > .MuiIconButton-root {
+  padding: 7px;
+}
+
+.emailRow__title > h6,
+.emailRow__massage > h6 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #202124;
+  margin: 0 5px;
+}
+.emailRow__massage > h6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.emailRow__massage > h6 > span.emailRow__description {
+  color: #5f6368;
+  font-weight: 400;
+  padding-left: 5px;
+}
+.emailRow__time {
+  text-align: right;
+}
+.emailRow__time > span {
+  font-weight: 700;
+}
+
+.emailRow__massage {
+  flex: 1;
+}
+
+@media (max-width: 1800px) {
+  .emailRow__massage {
+    flex: 0.45;
+  }
+  .emailRow__option,
+  .emailRow__title,
+  .emailRow__time {
+    flex: 0.18;
+  }
+}
+@media (max-width: 1280px) {
+  .emailRow__massage {
+    flex: 0.52;
+  }
+  .emailRow__option,
+  .emailRow__title,
+  .emailRow__time {
+    flex: 0.16;
+  }
+}
+@media (max-width: 959px) {
+  .emailRow__massage {
+    flex: 0.45;
+  }
+  .emailRow__option,
+  .emailRow__title,
+  .emailRow__time {
+    flex: 0.18;
+  }
+  .emailRow__time > span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media (max-width: 600px) {
+  .emailRow__massage {
+    flex: 0.6;
+  }
+
+  .emailRow__title,
+  .emailRow__time {
+    flex: 0.2;
+  }
+  .emailRow__option {
+    display: none;
+  }
+}

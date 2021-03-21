@@ -1,0 +1,84 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  z-index: 9999;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left > img {
+  cursor: pointer;
+  object-fit: contain;
+  height: 60px;
+  margin-left: 5px;
+}
+.header__middle {
+  box-sizing: border-box;
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.header__middle > input {
+  flex: 1;
+  font-size: medium;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  outline-width: 0;
+}
+.header__middle > .MuiSvgIcon-root {
+  color: gray;
+}
+.header__right {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header__right > .reader__rightAvatar {
+  cursor: pointer;
+}
+.header__rightUserInfo {
+  position: absolute;
+  right: 10px;
+  top: 61px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.header__rightUserInfo > h5 {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+.header__rightUserInfo > button {
+  padding: 10px 24px;
+  margin-top: 16px;
+}
+.header__rightUserInfo > button > span {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+@media (max-width: 600px) {
+  .header__middle {
+    display: none;
+  }
+}

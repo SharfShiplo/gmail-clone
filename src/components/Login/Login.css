@@ -1,0 +1,19 @@
+.login {
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.login__container {
+  margin: 50px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__container > img {
+  width: 200px;
+  object-fit: contain;
+}
